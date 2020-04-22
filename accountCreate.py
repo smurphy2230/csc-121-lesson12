@@ -20,5 +20,21 @@ def main():
             acct1.withdraw(amount)
             print("Balance: ", acct1.balance)
 
+    acct_name = input("Enter name: ")
+    acct_num = input("Enter account number: ")
+    acct2 = Account(acct_name, acct_num)
+    print("Balance: ", acct2.balance)
+    oper = 0
+    while oper != 3:
+        oper = int(input("Enter 1 for deposit, 2 for withdrawal, 3 for exit: "))
+        if oper == 1:
+            amount = int(input("Enter deposit amount: "))
+            acct2.deposit(amount)
+            print("Balance: ", acct2.balance)
+        elif oper == 2:
+            amount = int(input("Enter withdrawal amount: "))
+            acct2.withdraw(amount)
+            print("Balance:", acct2.balance)
+
 
 main()

@@ -1,6 +1,6 @@
 class Account:
 
-    def __init__(self, name, acct_num, balance):
+    def __init__(self, name, acct_num, balance = 0):
 
         """ constructor """
 
